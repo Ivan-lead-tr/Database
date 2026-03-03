@@ -7,6 +7,7 @@ import org.junit.Test;
 import java.util.List;
 
 public class UserServiceTest {
+    //Проверка пользовательских сервисов
     private final UserService userService = new UserServiceImpl();
 
     private final String testName = "Ivan";
@@ -16,6 +17,7 @@ public class UserServiceTest {
 
     @Test
     public void dropUsersTable() {
+       // Удаление списка пользователей
         try {
             userService.dropUsersTable();
             userService.dropUsersTable();
@@ -26,6 +28,7 @@ public class UserServiceTest {
 
     @Test
     public void createUsersTable() {
+        //Создание пользовательской таблицы
         try {
             userService.dropUsersTable();
             userService.createUsersTable();
@@ -36,6 +39,7 @@ public class UserServiceTest {
 
     @Test
     public void saveUser() {
+        //сохранение юзеров
         try {
             userService.dropUsersTable();
             userService.createUsersTable();
@@ -57,6 +61,7 @@ public class UserServiceTest {
 
     @Test
     public void removeUserById() {
+        //Удаление идентификатора пользователя
         try {
             userService.dropUsersTable();
             userService.createUsersTable();
@@ -69,6 +74,7 @@ public class UserServiceTest {
 
     @Test
     public void getAllUsers() {
+        //Получение доступа к пользователям
         try {
             userService.dropUsersTable();
             userService.createUsersTable();
@@ -85,6 +91,7 @@ public class UserServiceTest {
 
     @Test
     public void cleanUsersTable() {
+        //Очищение пользователей
         try {
             userService.dropUsersTable();
             userService.createUsersTable();

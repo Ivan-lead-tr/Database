@@ -10,13 +10,13 @@ public class User {
     private Long id;
 
     @Column
-    private String name;
+    private String name; //Имя
 
     @Column
-    private String lastName;
+    private String lastName;  //Фамилия
 
     @Column
-    private Byte age;
+    private Byte age;  // Сколько лет.
 
     public User() {
 
@@ -58,5 +58,15 @@ public class User {
 
     public void setAge(Byte age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
