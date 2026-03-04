@@ -9,7 +9,7 @@ public interface UserDao {
 
     void dropUsersTable(); // Удаление юзеров
 
-    void saveUser(String name, String lastName, byte age); // Сохранение юзеров
+    void saveUser(String name, String lastName, byte age); //Добавление юзеров
 
     void removeUserById(long id); // Удаление пользователей по id
 
